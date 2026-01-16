@@ -1,0 +1,20 @@
+{
+  "Group": "Ev0Mods",
+  "Name": "Ev0's Smokable Herbs",
+  "Version": "1.2.1",
+  "Description": "Smokable Herbs",
+  "Authors": [
+    {
+      "Name": "OfficialEv0",
+      "Email": "tttdanielak@gmail.com",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true,
+  "SubPlugins": []
+}

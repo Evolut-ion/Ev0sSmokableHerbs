@@ -1,0 +1,95 @@
+{
+  "Model": "Items/Icons/ItemsGenerated/Poppy Bud.blockymodel",
+  "Texture": "Items/Icons/ItemsGenerated/poppy_bud_texture.png",
+  "Tags": {
+    "Type": [
+      "Plant",
+      "Cannabis_Type"
+    ],
+    "Family": [
+      "Crop",
+      "Cannabis_Type"
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "items.poppybud.name"
+  },
+  "Categories": [
+    "Items.Foods"
+  ],
+  "Icon": "Icons/ItemsGenerated/Poppy_Bud.png",
+  "IconProperties": {
+    "Scale": 0.8,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      1,
+      -19
+    ]
+  },
+  "Utility": {
+    "Usable": true
+  },
+  "Consumable": true,
+  "MaxDurability": 1,
+  "Interactions": {
+    "Secondary": {
+      "RequireNewClick": false,
+      "Interactions": [
+        "Consume_Charge_Food_T3"
+      ]
+    }
+  },
+  "DropOnDeath": true,
+  "InteractionVars": {
+    "RemoveEffect": {
+      "Interactions": [
+        {
+          "Type": "Simple"
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": {
+            "StatModifiers": {
+              "Health": 5
+            },
+            "Duration": 2,
+            "DamageCalculatorCooldown": 4,
+            "Debuff": true,
+            "StatusEffectIcon": "UI/StatusEffects/Health_Potion.png",
+            "OverlapBehavior": "Extend"
+          }
+        }
+      ]
+    },
+    "Stat_Check": {
+      "Interactions": [
+        {
+          "Parent": "Stat_Check",
+          "Costs": {
+            "Health": 100
+          },
+          "ValueType": "Percent",
+          "LessThan": true
+        }
+      ]
+    }
+  },
+  "UsePlayerAnimations": true,
+  "Animation": "NPC/Undead/Skeleton/Animations/Attacks/Swing_Right_Moving.blockyanim",
+  "PlayerAnimationsId": {
+    "Parent": "Item"
+  },
+  "ResourceTypes": [
+    {
+      "Id": "Cannabis_Type"
+    }
+  ]
+}

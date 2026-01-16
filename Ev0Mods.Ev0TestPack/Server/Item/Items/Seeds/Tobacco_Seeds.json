@@ -1,0 +1,30 @@
+{
+  "Texture": "Items/Icons/ItemsGenerated/tobacco_seeds.png",
+  "Model": "Resources/Plants/SeedBag.blockymodel",
+  "Icon": "Icons/ItemsGenerated/Plant_Seeds_Tobacco.png",
+  "Interactions": {
+    "Secondary": "Seed_Condition"
+  },
+  "InteractionVars": {
+    "SeedId": {
+      "Interactions": [
+        "Tobacco_Seeds"
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "Seeds"
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "items.tobaccoseeds.name"
+  },
+  "PlayerAnimationsId": {
+    "Parent": "Item",
+    "UseFirstPersonOverrides": true
+  }
+}

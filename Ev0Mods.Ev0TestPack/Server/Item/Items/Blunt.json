@@ -1,0 +1,95 @@
+{
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Cannabis_Bud",
+        "Quantity": 5,
+        "ResourceTypeId": "Cannabis_Type"
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Joint"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Drying",
+        "RequiredTierLevel": 0,
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "Type": "Processing"
+      }
+    ],
+    "TimeSeconds": 5,
+    "PrimaryOutput": {
+      "ItemId": "Joint"
+    }
+  },
+  "Interactions": {
+    "Secondary": {
+      "RequireNewClick": false,
+      "Interactions": [
+        "Consume_Charge_Joint"
+      ]
+    }
+  },
+  "InteractionVars": {
+    "RemoveEffect": {
+      "Interactions": [
+        {
+          "Type": "Simple"
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": {
+            "StatModifiers": {
+              "Health": 5
+            },
+            "Duration": 2,
+            "DamageCalculatorCooldown": 4,
+            "Debuff": true,
+            "StatusEffectIcon": "UI/StatusEffects/Health_Potion.png",
+            "OverlapBehavior": "Extend"
+          }
+        }
+      ]
+    },
+    "Stat_Check": {
+      "Interactions": [
+        {
+          "Parent": "Stat_Check",
+          "Costs": {
+            "Health": 100
+          },
+          "ValueType": "Percent",
+          "LessThan": true
+        }
+      ]
+    }
+  },
+  "Consumable": true,
+  "DropOnDeath": true,
+  "Utility": {
+    "Usable": true
+  },
+  "ItemLevel": 2,
+  "Model": "Items/Icons/ItemsGenerated/Blunt.blockymodel",
+  "Texture": "Items/Icons/ItemsGenerated/blunt_texture.png",
+  "Icon": "Icons/ItemsGenerated/Blunt_icon.png",
+  "Scale": 3,
+  "UsePlayerAnimations": false,
+  "PlayerAnimationsId": "Item",
+  "Animation": "NPC/Undead/Skeleton/Animations/Attacks/Swing_Right.blockyanim",
+  "TranslationProperties": {
+    "Name": "items.blunt.name"
+  },
+  "Categories": [
+    "Items.Potions"
+  ]
+}

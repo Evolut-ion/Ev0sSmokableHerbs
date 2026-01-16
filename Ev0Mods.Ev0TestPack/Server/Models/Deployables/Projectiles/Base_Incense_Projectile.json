@@ -1,0 +1,46 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.1
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": -0.1
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1,
+  "DefaultAttachments": [
+    {
+      "Model": "Items/Icons/ItemsGenerated/Base_Incense.blockymodel",
+      "Texture": "Items/Icons/ItemsGenerated/base_incense_texture.png"
+    }
+  ],
+  "Model": "Items/Icons/ItemsGenerated/Base_Incense.blockymodel",
+  "Texture": "Items/Icons/ItemsGenerated/base_incense_texture.png",
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Items/Animations/Fly/Fly_Vertical.blockyanim"
+        }
+      ]
+    }
+  },
+  "Icon": "Icons/ModelsGenerated/Base_Incense_Projectile.png",
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      10,
+      40,
+      18
+    ],
+    "Translation": [
+      0,
+      -7
+    ]
+  }
+}

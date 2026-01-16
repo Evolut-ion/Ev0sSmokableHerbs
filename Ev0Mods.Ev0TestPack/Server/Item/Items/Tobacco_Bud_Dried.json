@@ -1,0 +1,28 @@
+{
+  "Icon": "Icons/ItemsGenerated/tobacco_bud_dried_icon.png",
+  "TranslationProperties": {
+    "Name": "Dried Tobacco Bud"
+  },
+  "Model": "Items/Icons/ItemsGenerated/tobacco_bud_dried.blockymodel",
+  "Texture": "Items/Icons/ItemsGenerated/tobacco_bud_dried_texture.png",
+  "UsePlayerAnimations": true,
+  "PlayerAnimationsId": "Item",
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Processing",
+        "Id": "Drying",
+        "Categories": [
+          "Drying"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Tobacco_Bud",
+        "Quantity": 2
+      }
+    ],
+    "TimeSeconds": 5
+  }
+}
