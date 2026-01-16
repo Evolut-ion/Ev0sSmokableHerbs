@@ -15,8 +15,6 @@ jobs:
 
       - name: Zip Files
         run: |
-          cd resource-pack
-          zip -r ../Ev0sSmokableHerbs.zip ./*
 
       - name: Upload to Modtale
         run: |
@@ -24,7 +22,7 @@ jobs:
           
           curl -X POST "https://api.modtale.net/api/v1/projects/$PROJECT_ID/versions" \
             -H "X-MODTALE-KEY: ${{ secrets.MODTALE_API_KEY }}" \
-            -F "file=@MyPack.zip" \
+            -F "file=@Ev0sSmokableHerbs.zip" \
             -F "versionNumber=$VERSION" \
             -F "gameVersions=Release 1.0" \
             -F "changelog=Released from GitHub Actions"
