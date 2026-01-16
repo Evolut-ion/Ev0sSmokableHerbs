@@ -13,6 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Zip Files
+        run: |
+          cd Ev0Mods.Ev0TestPack
+          zip -r ../Ev0sSmokableHerbs.zip ./*
+
       - name: Upload to Modtale
         run: |
           VERSION=${GITHUB_REF#refs/tags/}
