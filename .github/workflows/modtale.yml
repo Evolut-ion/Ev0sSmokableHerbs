@@ -17,7 +17,7 @@ jobs:
           
           curl -X POST "https://api.modtale.net/api/v1/projects/$PROJECT_ID/versions" \
             -H "X-MODTALE-KEY: ${{ secrets.MODTALE_API_KEY }}" \
-            -F "file=@Ev0sSmokableHerbs.zip" \
+            -F "file=@Ev0sSmokableHerbs"+ $VERSION".zip" \
             -F "versionNumber=$VERSION" \
             -F "gameVersions=Release 1.0" \
             -F "changelog=Released from GitHub Actions"
