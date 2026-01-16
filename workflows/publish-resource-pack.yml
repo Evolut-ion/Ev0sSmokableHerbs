@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # REPLACE THIS WITH YOUR REAL MODTALE RESOURCE PACK UUID
-      PROJECT_ID: "550e8400-e29b-41d4-a716-446655440000"
+      PROJECT_ID: "bb7748ba-758a-423e-a7ac-e52154594f27"
 
     steps:
       - uses: actions/checkout@v3
@@ -16,7 +16,7 @@ jobs:
       - name: Zip Files
         run: |
           cd resource-pack
-          zip -r ../MyPack.zip ./*
+          zip -r ../Ev0sSmokableHerbs.zip ./*
 
       - name: Upload to Modtale
         run: |
