@@ -1,0 +1,11 @@
+{
+  "Type": "Condition",
+  "RequiredGameMode": "Adventure",
+  "Crouching": false,
+  "Failed": "Block_Secondary",
+  "Next": {
+    "Type": "Condition",
+    "Parent": "Consume_Charge_Food_T1",
+    "Next": "Food_EffectCondition_Health_Restore"
+  }
+}

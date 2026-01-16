@@ -1,0 +1,29 @@
+{
+  "Icon": "Icons/ItemsGenerated/cannabis_bud_dried_icon.png",
+  "TranslationProperties": {
+    "Name": "Dried Cannabis Bud"
+  },
+  "Model": "Items/Icons/ItemsGenerated/cannabis_bud_dried.blockymodel",
+  "Texture": "Items/Icons/ItemsGenerated/cannabis_bud_dried_texture.png",
+  "UsePlayerAnimations": true,
+  "PlayerAnimationsId": "Item",
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Processing",
+        "Id": "Drying",
+        "Categories": [
+          "Drying"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Cannabis_Bud",
+        "ResourceTypeId": "Cannabis_Type",
+        "Quantity": 2
+      }
+    ],
+    "TimeSeconds": 5
+  }
+}
